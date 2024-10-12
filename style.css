@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+  }
+
+  .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+  }
+  .gradient-btn {
+    background-color: #000;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    font-family: Arial, sans-serif;
+    outline: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+  
+  .gradient-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(90deg, red, yellow, green, blue);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: background 0.3s ease;
+  }
+  
+  .gradient-btn:hover::before {
+    background: linear-gradient(90deg, blue, green,yellow, red); /* Reverse gradient on hover */
+  }
+  
+  .gradient-btn:hover {
+    color: #ccc; /* Change text color on hover */
+  } 
