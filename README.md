@@ -16,3 +16,8 @@ Output:
 ![image](https://github.com/user-attachments/assets/21ca914d-8445-4974-8e9e-85a82cccd003)
 
 The LogIn button gradient is different because the mouse cursor on it
+
+
+Video Output:
+https://github.com/user-attachments/assets/4ed6a395-a3f1-43c6-9863-43be511f65d3
+
